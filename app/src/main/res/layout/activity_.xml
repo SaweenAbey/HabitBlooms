@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D800D4C2"
+    android:padding="16dp">
+
+    <!-- Title -->
+
+    <!-- Image under Title -->
+
+    <!-- Grid Container -->
+
+    <!-- Cards with Emojis -->
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="289dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="What goals you want\nto focus on"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgHabit"
+        android:layout_width="298dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Habit Illustration"
+        android:scaleType="fitCenter"
+        android:src="@drawable/habbit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowGoals"
+        android:layout_width="377dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="4dp"
+        android:background="#D800D4C2"
+        android:backgroundTint="#D800D4C2"
+        app:constraint_referenced_ids="cardMeditation,cardRunning,cardFitness,cardProductivity,cardReading,cardCycling"
+        app:flow_horizontalGap="16dp"
+        app:flow_maxElementsWrap="2"
+        app:flow_verticalGap="20dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgHabit" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMeditation"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="🧘 Meditation"
+            android:textColor="#333"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRunning"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="🏃 Running"
+            android:textColor="#333"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardFitness"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="💪 Fitness"
+            android:textColor="#333"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProductivity"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="📈 Productivity"
+            android:textColor="#333"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardReading"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="📚 Reading"
+            android:textColor="#333"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCycling"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="🚴 Cycling"
+            android:textColor="#333"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="201dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/black"
+        android:text="Create your own"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flowGoals" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#009688</color>
+    <color name="lightgreen">#00BCD4</color>
+    
+    <!-- Logo-inspired colors -->
+    <color name="forest_green">#2D5016</color>        <!-- Dark forest green for main elements -->
+    <color name="lime_green">#7CB342</color>          <!-- Vibrant lime green for accents -->
+    <color name="olive_green">#689F38</color>          <!-- Muted olive green for secondary -->
+    <color name="orange_accent">#FF8F00</color>        <!-- Vibrant orange from logo -->
+    <color name="yellow_accent">#FFC107</color>        <!-- Bright yellow from logo -->
+    <color name="glow_green">#8BC34A</color>           <!-- Glowing lime green background -->
+    <color name="blue_accent">#2196F3</color>          <!-- Blue for quick add buttons -->
+    <color name="purple_accent">#9C27B0</color>         <!-- Purple for custom button -->
+    
+    <!-- Legacy colors for compatibility -->
+    <color name="purple">#9C27B0</color>
+    <color name="purple_light">#E1BEE7</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#9E9E9E</color>
+    <color name="gray_dark">#424242</color>
+
+
+
+    
+    <!-- Navigation item colors -->
+    <color name="nav_item_color">@color/selector_nav_item_color</color>
+</resources>

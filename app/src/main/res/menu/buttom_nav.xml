@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/aftersigninFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/moodFragment"
+        android:icon="@drawable/mood"
+        android:title="Mood"/>
+    <item
+        android:id="@+id/hydrationFragment"
+        android:icon="@drawable/hydration"
+        android:title="Hydration"/>
+    <item
+        android:id="@+id/habbitFragment"
+        android:icon="@drawable/habbitt"
+        android:title="Habits"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/setting"
+        android:title="Settings"/>
+</menu>

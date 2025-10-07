@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/aftersigninFragment">
+
+    <fragment
+        android:id="@+id/aftersigninFragment"
+        android:name="com.example.habitblooms.AftersigninFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/weeklyFragment"
+        android:name="com.example.habitblooms.WeeklyFragment"
+        android:label="Weekly" />
+
+    <fragment
+        android:id="@+id/goalFragment"
+        android:name="com.example.habitblooms.GoalFragment"
+        android:label="Goal" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.habitblooms.AboutFragment"
+        android:label="About" />
+
+
+    <fragment
+        android:id="@+id/onboarding1Fragment"
+        android:name="com.example.habitblooms.Onboarding1Fragment"
+        android:label="Onboarding1">
+        <action
+            android:id="@+id/action_onboarding1_to_onboarding2"
+            app:destination="@id/onboarding2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboarding2Fragment"
+        android:name="com.example.habitblooms.Onboarding2Fragment"
+        android:label="Onboarding2">
+        <action
+            android:id="@+id/action_onboarding2_to_onboarding3"
+            app:destination="@id/onboarding3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboarding3Fragment"
+        android:name="com.example.habitblooms.Onboarding3Fragment"
+        android:label="Onboarding3">
+        <action
+            android:id="@+id/action_onboarding3_to_onboarding4"
+            app:destination="@id/onboarding4Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboarding4Fragment"
+        android:name="com.example.habitblooms.Onboarding4Fragment"
+        android:label="Onboarding4">
+        <action
+            android:id="@+id/action_onboarding4_to_signin"
+            app:destination="@id/signinFragment"
+            app:popUpTo="@id/onboarding1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signinFragment"
+        android:name="com.example.habitblooms.SigninFragment"
+        android:label="Signin">
+        <action
+            android:id="@+id/action_signin_to_home"
+            app:destination="@id/aftersigninFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signin_to_signup"
+            app:destination="@id/signupFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.habitblooms.SignupFragment"
+        android:label="Signup">
+        <action
+            android:id="@+id/action_signup_to_home"
+            app:destination="@id/aftersigninFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signup_to_signin"
+            app:destination="@id/signinFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.habitblooms.ProfileFragment"
+        android:label="Profile" />
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.habitblooms.EditProfileFragment"
+        android:label="EditProfile" />
+
+    <fragment
+        android:id="@+id/hydrationFragment"
+        android:name="com.example.habitblooms.HydrationFragment"
+        android:label="Hydration" />
+
+    <fragment
+        android:id="@+id/moodFragment"
+        android:name="com.example.habitblooms.Mood"
+        android:label="Mood" />
+
+    <fragment
+        android:id="@+id/habbitFragment"
+        android:name="com.example.habitblooms.HabitFragment"
+        android:label="Habits" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.habitblooms.SettingsFragment"
+        android:label="Settings">
+        <action
+            android:id="@+id/action_settings_to_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+</navigation>
+
+
